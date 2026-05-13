@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento - PSYCORE</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>PSYCORE</h1>
+    <p>Solicitação de Atendimento</p>
+
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+</nav>
+
+<section>
+
+    <h2>Formulário de Ajuda</h2>
+
+    <form action="https://formsubmit.co/felipearruda315@gmail.com" method="POST">
+
+        <label>Nome completo</label>
+        <input type="text" name="nome" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Você está procurando ajuda para:</label>
+
+        <select name="tipo_ajuda" required>
+            <option value="">Selecione</option>
+            <option>Para mim</option>
+            <option>Para um amigo</option>
+            <option>Para um familiar</option>
+        </select>
+
+        <label>Qual o problema principal?</label>
+
+        <textarea name="problema" rows="5" required></textarea>
+
+        <label>Estado emocional atual</label>
+
+        <select name="estado" required>
+            <option value="">Selecione</option>
+            <option>Ansiedade</option>
+            <option>Depressão</option>
+            <option>Luto</option>
+            <option>Dependência química</option>
+            <option>Crises emocionais</option>
+            <option>Outro</option>
+        </select>
+
+        <label>Precisa de internação?</label>
+
+        <select name="internacao" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+            <option>Talvez</option>
+        </select>
+
+        <label>Mensagem adicional</label>
+
+        <textarea name="mensagem" rows="5"></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden"
+            name="_next"
+            value="https://felipearrudaa.github.io/Site-Projeto/obrigado.html">
+
+        <button type="submit">Enviar Solicitação</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 PSYCORE</p>
+</footer>
+
+</body>
+
+</html>
