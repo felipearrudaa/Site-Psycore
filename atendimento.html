@@ -11,10 +11,8 @@
 <body>
 
 <header>
-
     <h1>PSYCORE</h1>
     <p>Solicitação de Atendimento</p>
-
 </header>
 
 <nav>
@@ -25,15 +23,13 @@
 
     <h2>Formulário de Ajuda</h2>
 
-    <form action="https://formsubmit.co/felipearruda315@gmail.com" method="POST">
+    <form action="https://api.web3forms.com/submit" method="POST">
 
-        <input type="hidden" name="_subject" value="Nova solicitação de atendimento - PSYCORE">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="access_key" value="6881028a-78e0-44c8-b0fd-b67c6ea18504">
 
-        <input type="hidden"
-            name="_next"
-            value="https://felipearrudaa.github.io/Site-Psycore/obrigado.html">
+        <input type="hidden" name="subject" value="Nova solicitação de atendimento - PSYCORE">
+
+        <input type="hidden" name="redirect" value="https://felipearrudaa.github.io/Site-Psycore/obrigado.html">
 
         <label>Nome completo</label>
         <input type="text" name="nome" required>
@@ -42,7 +38,6 @@
         <input type="email" name="email" required>
 
         <label>Você está procurando ajuda para:</label>
-
         <select name="tipo_ajuda" required>
             <option value="">Selecione</option>
             <option>Para mim</option>
@@ -51,11 +46,9 @@
         </select>
 
         <label>Qual o problema principal?</label>
-
         <textarea name="problema" rows="5" required></textarea>
 
         <label>Estado emocional atual</label>
-
         <select name="estado" required>
             <option value="">Selecione</option>
             <option>Ansiedade</option>
@@ -67,7 +60,6 @@
         </select>
 
         <label>Precisa de internação?</label>
-
         <select name="internacao" required>
             <option value="">Selecione</option>
             <option>Sim</option>
@@ -76,7 +68,6 @@
         </select>
 
         <label>Mensagem adicional</label>
-
         <textarea name="mensagem" rows="5"></textarea>
 
         <button type="submit">Enviar Solicitação</button>
