@@ -57,6 +57,22 @@ button:hover{
     background-color: #155e75;
 }
 
+.botoes-hero{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.botao-secundario{
+    background-color: #164e63;
+}
+
+.botao-secundario:hover{
+    background-color: #0f3a4a;
+}
+
 .cards{
     display: flex;
     gap: 20px;
