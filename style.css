@@ -21,6 +21,16 @@ header p{
     font-size: 1.1rem;
 }
 
+.logo-header{
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid rgba(255,255,255,0.7);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 nav{
     background-color: #164e63;
     padding: 15px;
@@ -172,6 +182,36 @@ li{
     width: 70%;
 }
 
+.perfil{
+    display: block;
+    max-width: 190px;
+    width: 100%;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 5px solid #1f6f8b;
+}
+
+.funcao{
+    text-align: center;
+    background-color: #f3f9fb;
+    border-left: 5px solid #1f6f8b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #164e63;
+}
+
+blockquote{
+    background-color: #f3f9fb;
+    border-left: 5px solid #1f6f8b;
+    padding: 15px;
+    border-radius: 8px;
+    color: #164e63;
+    font-style: italic;
+    margin-top: 15px;
+}
+
 footer{
     background-color: #164e63;
     color: white;
@@ -180,7 +220,6 @@ footer{
     margin-top: 30px;
 }
 
-/* Responsividade para celular */
 @media(max-width: 600px){
     header{
         padding: 30px 15px;
@@ -192,6 +231,11 @@ footer{
 
     header p{
         font-size: 1rem;
+    }
+
+    .logo-header{
+        width: 80px;
+        height: 80px;
     }
 
     nav{
@@ -223,5 +267,9 @@ footer{
 
     .botoes-hero{
         flex-direction: column;
+    }
+
+    .perfil{
+        max-width: 150px;
     }
 }
