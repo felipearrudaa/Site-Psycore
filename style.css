@@ -9,19 +9,31 @@ header{
     background: linear-gradient(135deg, #155e75, #1f6f8b);
     color: white;
     text-align: center;
-    padding: 40px;
+    padding: 45px 20px;
+}
+
+header h1{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1.1rem;
 }
 
 nav{
     background-color: #164e63;
     padding: 15px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav a{
     color: white;
     text-decoration: none;
-    margin: 15px;
+    margin: 12px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -32,14 +44,34 @@ nav a:hover{
 
 section{
     background-color: white;
-    margin: 25px;
+    margin: 25px auto;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    width: 90%;
+    max-width: 1000px;
 }
 
 #hero{
     text-align: center;
+    background: linear-gradient(135deg, #ffffff, #f3f9fb);
+}
+
+#hero h2{
+    color: #155e75;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#hero p{
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+h2{
+    color: #155e75;
+    margin-bottom: 15px;
 }
 
 button{
@@ -55,6 +87,7 @@ button{
 
 button:hover{
     background-color: #155e75;
+    transform: scale(1.03);
 }
 
 .botoes-hero{
@@ -62,7 +95,7 @@ button:hover{
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .botao-secundario{
@@ -77,19 +110,44 @@ button:hover{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .card{
     background-color: #f3f9fb;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 22px;
+    border-radius: 12px;
     flex: 1;
-    min-width: 200px;
+    min-width: 220px;
+    border-left: 5px solid #1f6f8b;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    color: #155e75;
+    margin-bottom: 10px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+.grafico{
+    margin-top: 20px;
 }
 
 .barra{
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: 22px;
     background-color: #d1d5db;
     border-radius: 20px;
@@ -120,4 +178,50 @@ footer{
     text-align: center;
     padding: 20px;
     margin-top: 30px;
+}
+
+/* Responsividade para celular */
+@media(max-width: 600px){
+    header{
+        padding: 30px 15px;
+    }
+
+    header h1{
+        font-size: 1.8rem;
+    }
+
+    header p{
+        font-size: 1rem;
+    }
+
+    nav{
+        position: static;
+    }
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    section{
+        width: 85%;
+        margin: 18px auto;
+        padding: 22px;
+    }
+
+    #hero h2{
+        font-size: 1.5rem;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .botoes-hero{
+        flex-direction: column;
+    }
 }
