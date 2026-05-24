@@ -5,30 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atendimento - PSYCORE</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
 
 <header>
+    <img src="logo.png" alt="Logo da PSYCORE" class="logo-header">
     <h1>PSYCORE</h1>
     <p>Solicitação de Atendimento</p>
 </header>
 
 <nav>
     <a href="index.html">Início</a>
+    <a href="Equipe.html">Equipe</a>
+    <a href="profissional.html">Profissionais</a>
 </nav>
 
 <section>
-
     <h2>Formulário de Ajuda</h2>
 
     <form action="https://api.web3forms.com/submit" method="POST">
 
         <input type="hidden" name="access_key" value="6881028a-78e0-44c8-b0fd-b67c6ea18504">
-
         <input type="hidden" name="subject" value="Nova solicitação de atendimento - PSYCORE">
-
         <input type="hidden" name="redirect" value="https://felipearrudaa.github.io/Site-Psycore/obrigado.html">
 
         <label>Nome completo</label>
@@ -36,6 +37,9 @@
 
         <label>Email</label>
         <input type="email" name="email" required>
+
+        <label>Telefone para contato</label>
+        <input type="tel" name="telefone" placeholder="Ex: (11) 99999-9999" required>
 
         <label>Você está procurando ajuda para:</label>
         <select name="tipo_ajuda" required>
@@ -71,9 +75,7 @@
         <textarea name="mensagem" rows="5"></textarea>
 
         <button type="submit">Enviar Solicitação</button>
-
     </form>
-
 </section>
 
 <footer>
