@@ -212,6 +212,20 @@ blockquote{
     margin-top: 15px;
 }
 
+.aviso-importante{
+    border-left: 6px solid #f59e0b;
+    background-color: #fff7ed;
+}
+
+.aviso-importante h2{
+    color: #92400e;
+}
+
+.aviso-importante p{
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
 footer{
     background-color: #164e63;
     color: white;
